@@ -78,18 +78,15 @@ Inclui:
 
 ---
 
-## ⚙️ Como Reproduzir no Databricks
+## Como Reproduzir no Databricks
 
-### **1. Criar conta gratuita**
-👉 https://community.cloud.databricks.com/
-
-### **2. Criar cluster**
+### **1. Criar cluster**
 - Cluster Mode: Single Node  
 - Runtime: Databricks Runtime 13+ (ou versão mais recente)  
 - Autoscaling: OFF  
 - Termination: 120 min  
 
-### **3. Upload do dataset**
+### **2. Upload do dataset**
 No menu lateral:  
 `Data` → `Add Data` → `Upload File`
 
@@ -98,7 +95,7 @@ Caminho final no DBFS:/FileStore/tables/StudentsPerformance.csv
 ### **Importando notebooks**
 Baixe os arquivos da pasta `/notebooks` deste repositório e importe para o Workspace do Databricks.
 
-### **5. Executar na ordem**
+### **3. Executar na ordem**
 1. `01_bronze_ingest.ipynb`  
 2. `02_prata_transform.ipynb`  
 3. `03_ouro_curated.ipynb`  
